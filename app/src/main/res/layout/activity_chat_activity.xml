@@ -15,7 +15,7 @@
         app:layout_constraintRight_toRightOf="parent">
     </android.support.v7.widget.RecyclerView>
 
-    <!-- A horizontal line between the chatbox and RecyclerView -->
+    <!--  horizontal line between our chat  box and recyclerView -->
     <View
         android:layout_width="0dp"
         android:layout_height="2dp"
