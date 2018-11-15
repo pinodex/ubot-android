@@ -19,10 +19,13 @@ public class login_form extends AppCompatActivity {
         //anylinktext = findViewById(R.id.anylinktext);
 
         //String anylink = anylinktext.getText().toString();
-        WebView browser = findViewById(R.id.webview);
-        browser.setWebViewClient(new WebViewClient());
-        browser.loadUrl("http://www.unionbankph.com/");
-        //Intent intent = new Intent(this,chat_activity.class);
-        //startActivity(intent);
+
+            WebView browser = findViewById(R.id.webview);
+            browser.setWebViewClient(new WebViewClient());
+            browser.loadUrl("http://www.unionbankph.com/");
+
+            Intent intent = new Intent(this, chat_activity.class);
+            startActivity(intent);
+
     }
 }
