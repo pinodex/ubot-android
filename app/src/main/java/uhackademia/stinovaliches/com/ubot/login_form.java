@@ -1,5 +1,6 @@
 package uhackademia.stinovaliches.com.ubot;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebView;
@@ -20,6 +21,8 @@ public class login_form extends AppCompatActivity {
         //String anylink = anylinktext.getText().toString();
         WebView browser = findViewById(R.id.webview);
         browser.setWebViewClient(new WebViewClient());
-        browser.loadUrl("https://www.google.com");
+        browser.loadUrl("http://www.unionbankph.com/");
+        //Intent intent = new Intent(this,chat_activity.class);
+        //startActivity(intent);
     }
 }
