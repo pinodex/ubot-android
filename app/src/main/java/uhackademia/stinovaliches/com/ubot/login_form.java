@@ -14,7 +14,7 @@ import android.widget.EditText;
 public class login_form extends AppCompatActivity {
 
     EditText anylinktext;
-    FloatingActionButton floatbutton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,18 +25,12 @@ public class login_form extends AppCompatActivity {
 
         //String anylink = anylinktext.getText().toString();
 
+        String redirecturi = "https://api-uat.unionbankph.com/partners/sb//convergent/v1/oauth2/authorize?client_id=6bdc184f-3004-4188-94c2-3785a1317fca&redirect_uri=https%3A%2F%2F61509fda.ngrok.io%2Fapi%2Fauth%2Foauth&response_type=code&type=linking&partnerId=5dff2cdf-ef15-48fb-a87b-375ebff415bb&scope=account_info";
+
             WebView browser = findViewById(R.id.webview);
             browser.setWebViewClient(new WebViewClient());
-            browser.loadUrl("http://www.unionbankph.com/");
+            browser.loadUrl(redirecturi);
 
-            floatbutton = findViewById(R.id.floatingActionButton);
-            floatbutton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(getApplicationContext(),chat_activity.class);
-                    startActivity(intent);
-                }
-            });
 
     }
 }

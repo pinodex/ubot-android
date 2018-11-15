@@ -18,7 +18,7 @@ public class ubot_splashscreen extends AppCompatActivity {
         splashimage = findViewById(R.id.splashimage);
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.mytransition);
         splashimage.startAnimation(myanim);
-        final Intent i = new Intent(this,login_form.class);
+        final Intent i = new Intent(this,chat_activity.class);
         Thread timer = new Thread(){
             public void run(){
                 try {

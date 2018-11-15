@@ -1,7 +1,9 @@
 package uhackademia.stinovaliches.com.ubot;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.sax.StartElementListener;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,10 +27,14 @@ public class chat_activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
-
+                viewingonlytobedeleted();
             }
         });
 
+    }
+    public void viewingonlytobedeleted ()
+    {
+        Intent intent = new Intent(this, login_form.class);
+        startActivity(intent);
     }
 }
