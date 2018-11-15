@@ -18,7 +18,7 @@
                 android:layout_width="400dp"
                 android:layout_height="160dp"
                 android:layout_gravity="center"
-                android:background="@drawable/uhack_temp_logo"/>
+                android:background="@drawable/uhack_temp_logo_with_bot_outline"/>
 
         </LinearLayout>
 

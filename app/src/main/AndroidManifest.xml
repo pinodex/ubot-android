@@ -9,9 +9,8 @@
         android:icon="@mipmap/ubot_appicon_icon"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
-        <activity
-            android:name=".login_form"
-            android:theme="@style/AppTheme">
+        <activity android:name=".ubot_splashscreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -20,10 +19,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".login_form"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
             android:name=".chat_activity"
             android:label="Chat Message"
             android:theme="@style/AppTheme1"></activity>
-        <activity android:name=".ubot_splashscreen"></activity>
     </application>
 
 </manifest>

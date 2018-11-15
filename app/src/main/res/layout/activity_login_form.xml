@@ -13,7 +13,20 @@
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp" >
-
     </WebView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="27dp"
+        android:clickable="true"
+        app:srcCompat="?android:attr/listChoiceIndicatorSingle"
+        tools:layout_editor_absoluteX="309dp"
+        tools:layout_editor_absoluteY="447dp" />
+
 
 </RelativeLayout>
